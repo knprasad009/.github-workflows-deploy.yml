@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amaravathii.com - TVS Raider 125CC 2022 August Model</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-black text-white py-5 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-wide">Amaravathii.com</h1>
+      <a href="#enquiry" class="bg-red-500 hover:bg-red-600 px-5 py-2 rounded-lg font-semibold transition">
+        Enquire Now
+ @ 9581939139     </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-gray-900 to-black text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Bike Image -->
+      <div>
+        <img 
+          src="https://www.tvsmotor.com/-/media/Feature/Vehicle/Brand-Page/TVS-Raider/Color/Fiery-Yellow.png" 
+          alt="TVS Raider 125CC"
+          class="rounded-3xl shadow-2xl w-full max-w-2xl mx-auto object-contain bg-white p-4 border-4 border-red-500"
+          onerror="this.src='raider.jpeg?q=80&w=1200&auto=format&fit=crop'"
+        />
+      </div>
+
+      <!-- Content -->
+      <div>
+        <h2 class="text-5xl font-extrabold mb-4 leading-tight">
+          TVS Raider 125CC
+        </h2>
+
+        <p class="text-xl text-gray-300 mb-6">
+          Stylish Powerful Fuel Efficient
+        </p>
+
+        <div class="bg-red-500 inline-block px-6 py-3 rounded-2xl text-3xl font-bold shadow-lg mb-6">
+          49,999/- Only
+        </div>
+
+        <ul class="space-y-3 text-lg text-gray-200 mb-8">
+          <li> 125CC Powerful Engine</li>
+          <li>Sporty Digital Display</li>
+          <li>Excellent Mileage 63kmpl to 65kmpl approx. tested under ood conditioned roads</li>
+          <li> Stylish LED Headlamp</li>
+          <li> Comfortable Seating for you and your Bestie!</li>
+        </ul>
+
+        <a href="#enquiry" class="bg-white text-black px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-200 transition">
+          Book Your Enquiry
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-12">Why Choose TVS Raider</h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-8 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+          <div class="text-5xl mb-4">Stylish</div>
+          <h4 class="text-2xl font-bold mb-3">Sporty Design</h4>
+          <p class="text-gray-600">Modern aggressive styling with premium look and feel.</p>
+        </div>
+
+        <div class="bg-gray-100 p-8 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+          <div class="text-5xl mb-4"></div>
+          <h4 class="text-2xl font-bold mb-3">High Mileage</h4>
+          <p class="text-gray-600">Get excellent fuel efficiency for daily commuting.</p>
+        </div>
+
+        <div class="bg-gray-100 p-8 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+          <div class="text-5xl mb-4"></div>
+          <h4 class="text-2xl font-bold mb-3">Powerful Engine</h4>
+          <p class="text-gray-600">125CC engine delivers smooth and responsive performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry Form -->
+  <section id="enquiry" class="py-16 bg-gray-900 text-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="bg-black rounded-3xl shadow-2xl p-10">
+        <h3 class="text-4xl font-bold text-center mb-4">Customer Enquiry Form</h3>
+        <p class="text-center text-gray-400 mb-10">
+          Fill your details and our team will contact you soon.
+        </p>
+
+        <form class="space-y-6" onsubmit="submitForm(event)">
+          <div>
+            <label class="block mb-2 text-lg">Full Name</label>
+            <input 
+              type="text" 
+              id="name"
+              placeholder="Enter your full name"
+              required
+              class="w-full px-5 py-4 rounded-xl text-black outline-none focus:ring-4 focus:ring-red-400"
+            />
+          </div>
+
+          <div>
+            <label class="block mb-2 text-lg">Cell Number</label>
+            <input 
+              type="tel" 
+              id="phone"
+              placeholder="Enter your mobile number"
+              required
+              maxlength="10"
+              class="w-full px-5 py-4 rounded-xl text-black outline-none focus:ring-4 focus:ring-red-400"
+            />
+          </div>
+
+          <button 
+            type="submit"
+            class="w-full bg-red-500 hover:bg-red-600 py-4 rounded-xl text-xl font-bold transition"
+          >
+            Submit Enquiry
+          </button>
+        </form>
+
+        <div id="successMessage" class="hidden mt-6 bg-green-500 text-white text-center py-4 rounded-xl font-semibold">
+          Thank you! Your enquiry has been submitted successfully.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-6 text-center">
+    <p class="text-lg">2026 Amaravathii.com | TVS Raider 125CC Offers</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+
+      if(phone.length < 10){
+        alert('Please enter a valid 10-digit mobile number');
+        return;
+      }
+
+      document.getElementById('successMessage').classList.remove('hidden');
+
+      console.log('Customer Enquiry:', {
+        name,
+        phone
+      });
+
+      event.target.reset();
+    }
+  </script>
+
+</body>
+</html>
